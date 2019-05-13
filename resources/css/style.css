@@ -69,7 +69,7 @@
 	}
 		#mission > div {
 			text-align: center;
-			/* above horizontally centers the text inside the dic #mission  */
+			/* above horizontally centers the text inside the div #mission  */
 			color: seashell;
 			background-color: black;
 
@@ -86,116 +86,89 @@
 		width: 1000px;
 		text-align: center;
 	}
+		.teas {
+			margin: 0 auto;
+			width: 1000px;
+
+			/* Flex */
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+			.teas > div {
+				padding: 25px 15px 0;
+				/* how did you figure the padding out without it being given? */
+				text-align: center;
+			}
+				.teas > div img {
+					padding-bottom: 10px;
+					width: 300px;
+					height: 200px;
+					display: block;
+					/* why not add this to the flex section of .teas? */
+				}
 
 /*
-* Teas
- */
-	.teas {
+* Locations
+*/
+	#locations {
 		margin: 0 auto;
-		padding: 70px 0;
-		width: 1000px;
+		height: 500px;
+		background: transparent url("../images/locations-background.jpg") center -65px no-repeat;
 		text-align: center;
-
-		/* flex */
-
-		display: inline-flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		align-items: center;
 	}
 
-	#teapics {
-		height: 200px;
-		width: 300px;
-		padding-bottom: 10px;
-		padding-top: 10px;
-	}
+		#locations > h2 {
+			padding-top: 75px;
+			line-height: unset;
+			/* I don't know what line-height means */
+		}
 
-	/*
-	* Locations
-	*/
-#locations {
-	margin: 0 auto;
-	height: 500px;
-	background: transparent url("../images/locations-background.jpg") center no-repeat;
-	text-align: center;
+		.locations {
+			/* Flex */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+			.locations > div {
+				margin: 15px 20px;
+				/* I don't understand the math */
+				width: 300px;
+				background-color: black;
 
-	/*Flex */
-	/* display: flex; */
-	/* justify-content: center; */
-	/* flex-direction: row; */
-	/* flex-wrap: nowrap; */
-	align-items: center;
-	align-content: center;
-}
-
-#location > h2 {
-
-}
-
-
- .areas {
-	height: 200px;
-	width: 300px;
-	text-align: center;
-	color: seashell;
-	background-color: black;
-	opacity: 1;
-	margin: 20px 20px;
-
-	/* Flex */
-
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-
-}
-
-#locations h2 {
-	padding-bottom: 15px;
-}
-/* from codepen */
-
-/* #container {
-  margin: 0 auto;
-  height: 500px;
-  display: flex;
- justify-content: center;
- flex-direction: row;
-
-
-}
-
-#container > div {
-  justify-conetent: center;
-  align-content: center;
-  /* text-align: center;
-  height: 200px;
-  width: 300px;
-  color: red;
-  background:  black;
-}
+				/* Flex */
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				/* why not add this to the flex section of .locations? */
+			}
+			.locations h3,
+			.locations p {
+				line-height: 55px;
+				font-size: 18px;
+				text-align: center;
+				color: seashell;
+			}
 
 /*
 * Contact
 */
-
-.contact {
-	margin: 0 auto;
-	height: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-}
+	.contact {
+		margin: 0 auto;
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
 
 /*
 * Footer
 */
-.footer {
-	margin-right: 20px;
-	height: 30px;
-	align-content: flex-end;
-}
+	footer {
+		margin: 20px auto;
+		font-size: 12px;
+		width: 1200px;
+		height: 30px;
+		/* how did you figure the font-size,width, and height?  */
+	}
